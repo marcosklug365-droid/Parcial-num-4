@@ -1,0 +1,94 @@
+/* ====== IMAGEN PRINCIPAL ====== */
+.homeimg img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.homeimg img:hover {
+    transform: scale(1.04) rotate(0.5deg);
+    box-shadow: 0 12px 32px rgba(255,107,107,0.2);
+}
+
+/* ====== COLUMNAS ====== */
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* bienvenidos */
+.bienvenidos {
+    width: 75%;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.05); /* glass sutil */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.bienvenidos h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.bienvenidos p {
+    font-size: 19px;
+    color: #f0f0f0;
+    line-height: 1.7;
+}
+
+/* testimonios */
+.testimonios {
+    width: 25%;
+}
+
+.testimonio {
+    background: rgba(255,255,255,0.05);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    border-left: 4px solid #ff6b6b; /* línea roja moderna */
+    padding-left: 14px;
+}
+
+.testimonio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255,107,107,0.3);
+    background: rgba(255,255,255,0.1);
+}
+
+/* cita */
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    color: #ff6b6b;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column;
+    }
+    .bienvenidos, .testimonios {
+        width: 100%;
+    }
+    .testimonios {
+        margin-top: 20px;
+    }
+    .bienvenidos h2 {
+        font-size: 1.8rem;
+    }
+    .bienvenidos p {
+        font-size: 17px;
+    }
+}
+

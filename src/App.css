@@ -1,0 +1,76 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #222b33;
+  color: #fff;
+  font-size: 16px; /* tamaño base */
+}
+
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+main.holder {
+  margin-bottom: 50px; /* colchón general en todas las páginas */
+}
+
+h1,
+h3,
+h4,
+h5 {
+  color: #fff;
+  font-weight: 700;
+}
+
+h2 {
+  color: #f04; /* rojo */
+  font-weight: 700; /* más negrita */
+  font-size: 2rem; /* más grande (≈32px) */
+  margin-bottom: 1rem; /* separación con el párrafo */
+}
+
+p {
+  color: #ccc;
+  font-size: 18px; /* más grande que el body */
+  line-height: 1.8; /* más aire entre líneas */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #f04;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-size: 16px; /* botones legibles */
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #c03;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #f04;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: #f04;
+}
+
+/* ====== ZOOM GLOBAL EN IMÁGENES ====== */
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}

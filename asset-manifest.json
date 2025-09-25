@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/marcosklug365-droid/Parcial-num-4/static/css/main.c0caf5bc.css",
+    "main.js": "/marcosklug365-droid/Parcial-num-4/static/js/main.503316fc.js",
+    "static/js/453.670e15c7.chunk.js": "/marcosklug365-droid/Parcial-num-4/static/js/453.670e15c7.chunk.js",
+    "index.html": "/marcosklug365-droid/Parcial-num-4/index.html",
+    "main.c0caf5bc.css.map": "/marcosklug365-droid/Parcial-num-4/static/css/main.c0caf5bc.css.map",
+    "main.503316fc.js.map": "/marcosklug365-droid/Parcial-num-4/static/js/main.503316fc.js.map",
+    "453.670e15c7.chunk.js.map": "/marcosklug365-droid/Parcial-num-4/static/js/453.670e15c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0caf5bc.css",
+    "static/js/main.503316fc.js"
+  ]
+}

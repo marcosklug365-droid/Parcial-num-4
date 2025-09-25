@@ -1,0 +1,139 @@
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.contacto {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* ====== FORMULARIO ====== */
+.contacto-form {
+    flex: 1 1 350px;
+    background: rgba(31, 31, 31, 0.35); /* glass effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.contacto-form h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* FORMULARIO */
+.formulario p {
+    margin-bottom: 1rem;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formulario input[type="text"]:hover,
+.formulario input[type="email"]:hover,
+.formulario textarea:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 2px 8px rgba(255,255,255,0.2);
+}
+
+.formulario textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BOTÓN ENVIAR */
+.acciones input[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 12px;
+    background: #ff4b5c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.acciones input[type="submit"]:hover {
+    background: #ff6b6b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255,75,92,0.4);
+}
+
+/* ====== DATOS DE CONTACTO ====== */
+.contacto-datos {
+    flex: 1 1 250px;
+    background: rgba(31, 31, 31, 0.35); /* glass effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.contacto-datos h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.contacto-datos p {
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contacto-datos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contacto-datos ul li {
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .contacto-form, .contacto-datos {
+        width: 100%;
+    }
+}
